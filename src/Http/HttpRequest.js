@@ -9,7 +9,13 @@ function HttpRequest(){
 }
 
 HttpRequest.prototype.ip = function(req){
-    return (req.headers['x-forwarded-for'] || req.connection.remoteAddress || req.socket.remoteAddress || req.connection.socket.remoteAddress) ;
+    let ip = (req.headers['x-forwarded-for'] || req.connection.remoteAddress || req.socket.remoteAddress || req.connection.socket.remoteAddress) ;
+    if(ip){
+        let ips = ip.split(',');
+        return ips[0];
+    }else {
+        return ip;
+    }
 }
 
 module.exports = HttpRequest;
