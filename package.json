@@ -1,0 +1,19 @@
+{
+  "name": "moensun-utils",
+  "version": "1.0.0",
+  "description": "moensun-utils-nodejs",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengxiaotx/moensun-utils-nodejs.git"
+  },
+  "author": "Bane.Shi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fengxiaotx/moensun-utils-nodejs/issues"
+  },
+  "homepage": "https://github.com/fengxiaotx/moensun-utils-nodejs#readme"
+}
