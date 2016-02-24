@@ -14,7 +14,7 @@
         <array />
       </option>
       <option name="outputFromStdout" value="false" />
-      <option name="program" value="$PROJECT_DIR$/../../../../Language/nodejs/node.exe" />
+      <option name="program" value="$PROJECT_DIR$/../../../../language/nodejs/node-v5.5.0-linux-x64/bin/node" />
       <option name="scopeName" value="Project Files" />
       <option name="trackOnlyRoot" value="true" />
       <option name="workingDir" value="$FileDir$" />

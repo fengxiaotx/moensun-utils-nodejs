@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/fengxiaotx/moensun-utils-nodejs/issues"
   },
-  "homepage": "https://github.com/fengxiaotx/moensun-utils-nodejs#readme"
+  "homepage": "https://github.com/fengxiaotx/moensun-utils-nodejs#readme",
+  "dependencies": {
+    "lodash": "^4.5.1"
+  }
 }
