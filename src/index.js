@@ -3,5 +3,6 @@
  */
 'use strict';
 module.exports={
-    Http:require('./Http/Http.js')
+    Http:require('./Http/Http.js'),
+    Random:require("./Random/index.js")
 }
