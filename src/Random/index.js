@@ -12,3 +12,5 @@ function Random(){
 Random.num = function(min,max){
     return Math.round(Math.random()*(max-min)+min);
 }
+
+module.exports = Random;
