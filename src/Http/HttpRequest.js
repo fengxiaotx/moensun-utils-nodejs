@@ -30,12 +30,21 @@ HttpRequest.queryParamsRename = function (query,fields){
     if( _.isArray(fields)){
         for (let field of fields){
             let resObj = {};
+
+            let key = field[0];
+
+            if((new RegExp("\\[\\]")).test(field[1])){
+                if(!_.isArray(query[field[1]]) || query[field[1]].length == 1 ){
+                    key = key+"[]";
+                }
+            }
+
             if(query[field[1]]){
-                resObj[field[0]] = query[field[1]] ;
+                resObj[key] = query[field[1]] ;
                 Object.assign(obj,resObj);
             }else {
                 if(field[2]){
-                    resObj[field[0]] = field[2] ;
+                    resObj[key] = field[2] ;
                     Object.assign(obj,resObj);
                 }
             }
